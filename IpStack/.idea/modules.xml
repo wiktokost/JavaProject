@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/IpStack.iml" filepath="$PROJECT_DIR$/.idea/IpStack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IpStack-client/IpStack-client.iml" filepath="$PROJECT_DIR$/IpStack-client/IpStack-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IpStack-data/IpStack-data.iml" filepath="$PROJECT_DIR$/IpStack-data/IpStack-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IpStack-web-api/IpStack-web-api.iml" filepath="$PROJECT_DIR$/IpStack-web-api/IpStack-web-api.iml" />
+    </modules>
+  </component>
+</project>
