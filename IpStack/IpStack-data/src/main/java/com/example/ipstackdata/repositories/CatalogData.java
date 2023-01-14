@@ -11,5 +11,6 @@ public class CatalogData implements ICatalogData{
     private final IpRepository ipGeolocation;
     private final LanguageRepository language;
     private final LocationRepository location;
+    private final CurrencyRepository currency;
 
 }

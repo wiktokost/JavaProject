@@ -1,5 +1,6 @@
 package com.example.ipstack.ipstackclient.contract;
 
+import com.example.ipstack.ipstackclient.contract.dictionaries.CurrencyDto;
 import com.example.ipstack.ipstackclient.contract.dictionaries.LocationDto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -36,4 +37,6 @@ public class LeadIpToGeolocationDto extends LeadIpToGeolocationSummaryDto {
     private double longitude;
     @JsonProperty("location")
     private LocationDto location;
+    @JsonProperty("currency")
+    private CurrencyDto currency;
 }

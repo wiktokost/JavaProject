@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/IpStack-data/pom.xml" />
         <option value="$PROJECT_DIR$/IpStack-client/pom.xml" />
         <option value="$PROJECT_DIR$/IpStack-web-api/pom.xml" />
+        <option value="$PROJECT_DIR$/IpStack-updater/pom.xml" />
       </list>
     </option>
   </component>

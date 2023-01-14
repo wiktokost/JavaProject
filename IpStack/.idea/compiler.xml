@@ -7,14 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="IpStack-data" />
         <module name="IpStack-client" />
+        <module name="IpStack-data" />
+        <module name="IpStack-updater" />
         <module name="IpStack-web-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="IpStack-client" target="17" />
       <module name="IpStack-data" target="17" />
+      <module name="IpStack-updater" target="17" />
       <module name="IpStack-web-api" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -22,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="IpStack-client" options="-parameters" />
       <module name="IpStack-data" options="-parameters" />
+      <module name="IpStack-updater" options="-parameters" />
       <module name="IpStack-web-api" options="-parameters" />
     </option>
   </component>

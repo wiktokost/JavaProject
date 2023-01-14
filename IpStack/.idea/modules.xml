@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/IpStack.iml" filepath="$PROJECT_DIR$/.idea/IpStack.iml" />
       <module fileurl="file://$PROJECT_DIR$/IpStack-client/IpStack-client.iml" filepath="$PROJECT_DIR$/IpStack-client/IpStack-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/IpStack-data/IpStack-data.iml" filepath="$PROJECT_DIR$/IpStack-data/IpStack-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IpStack-updater/IpStack-updater.iml" filepath="$PROJECT_DIR$/IpStack-updater/IpStack-updater.iml" />
       <module fileurl="file://$PROJECT_DIR$/IpStack-web-api/IpStack-web-api.iml" filepath="$PROJECT_DIR$/IpStack-web-api/IpStack-web-api.iml" />
     </modules>
   </component>
