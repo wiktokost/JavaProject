@@ -1,7 +1,8 @@
-package com.example.ipstackwebapi;
+package com.example.ipstackwebapi.service;
 
+import com.example.ipstackdata.model.IpGeolocation;
 import com.example.ipstackdata.repositories.CatalogData;
-import com.example.ipstackwebapi.service.IIpGeolocationService;
+import com.example.ipstackwebapi.contract.IpGeolocationSummaryDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,8 +17,8 @@ public class IpGeolocationService implements IIpGeolocationService {
     }
 
     @Override
-    public List<IpGeolocationSummaryDto> getAll() {
-        return db.getIpGeolocation().findAll().stream().map(entity->new IpGeolocationSummaryDto(entity.getIp(), entity.getType(), entity.getLatitude(),entity.getLongitude())).toList();
+    public List<IpGeolocation> getAll() {
+        return db.getIpGeolocation().findAll();
     }
 
 //    public Optional<IpGeolocation> getId(Long id){

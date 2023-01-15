@@ -1,4 +1,4 @@
-package com.example.ipstackwebapi;
+package com.example.ipstackwebapi.contract;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

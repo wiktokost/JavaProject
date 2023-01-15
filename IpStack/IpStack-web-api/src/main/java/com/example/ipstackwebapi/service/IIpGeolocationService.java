@@ -1,10 +1,11 @@
 package com.example.ipstackwebapi.service;
 
-import com.example.ipstackwebapi.IpGeolocationSummaryDto;
+import com.example.ipstackdata.model.IpGeolocation;
+import com.example.ipstackwebapi.contract.IpGeolocationSummaryDto;
 
 import java.util.List;
 
 public interface IIpGeolocationService {
-    List<IpGeolocationSummaryDto> getAll();
+    List<IpGeolocation> getAll();
 //    long saveIpStack(IpGeolocationDto dto);
 }

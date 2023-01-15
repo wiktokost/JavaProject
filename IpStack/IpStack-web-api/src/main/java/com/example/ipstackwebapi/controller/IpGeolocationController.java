@@ -1,12 +1,14 @@
-package com.example.ipstackwebapi;
+package com.example.ipstackwebapi.controller;
 
+import com.example.ipstackdata.model.IpGeolocation;
+import com.example.ipstackwebapi.service.IpGeolocationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("")
 public class IpGeolocationController {
     private final IpGeolocationService service;
 
@@ -20,11 +22,9 @@ public class IpGeolocationController {
 //        return service.saveIpStack(ipStack);
 //    }
 
-    @RequestMapping( "/all")
-    public ResponseEntity getAll(){
-        return ResponseEntity.ok(service.getAll());
+    @GetMapping( "/all")
+    public List<IpGeolocation> getAllData(){
+        return service.getAll();
     }
-
-
-//    @GetMapping("/")
+    
 }
