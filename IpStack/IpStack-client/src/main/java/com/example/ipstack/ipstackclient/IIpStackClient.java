@@ -1,7 +1,7 @@
 package com.example.ipstack.ipstackclient;
 
-import com.example.ipstack.ipstackclient.contract.LeadIpToGeolocationDto;
+import com.example.ipstack.ipstackclient.contract.IpGeolocationDto;
 
 public interface IIpStackClient {
-        LeadIpToGeolocationDto getGeolocationDescription();
+        IpGeolocationDto getGeolocationDescription();
 }
