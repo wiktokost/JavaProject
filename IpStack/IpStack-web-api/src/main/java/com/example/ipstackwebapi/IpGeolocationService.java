@@ -1,7 +1,7 @@
-package com.example.ipstackwebapi.service;
+package com.example.ipstackwebapi;
 
 import com.example.ipstackdata.repositories.CatalogData;
-import com.example.ipstackwebapi.contract.IpGeolocationSummaryDto;
+import com.example.ipstackwebapi.service.IIpGeolocationService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

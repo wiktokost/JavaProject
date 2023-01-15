@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
-@SpringBootApplication(scanBasePackages = {"com.example.ipstackdata"})
+@SpringBootApplication
 public class IpStackClientApplication {
 
     public static void main(String[] args) {

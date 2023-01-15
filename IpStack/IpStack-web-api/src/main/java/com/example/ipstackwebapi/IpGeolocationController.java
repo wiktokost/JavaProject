@@ -1,12 +1,12 @@
-package com.example.ipstackwebapi.controller;
+package com.example.ipstackwebapi;
 
-import com.example.ipstackwebapi.service.IpGeolocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
+@RequestMapping("")
 public class IpGeolocationController {
     private final IpGeolocationService service;
 
@@ -24,6 +24,7 @@ public class IpGeolocationController {
     public ResponseEntity getAll(){
         return ResponseEntity.ok(service.getAll());
     }
+
 
 //    @GetMapping("/")
 }

@@ -1,6 +1,6 @@
 package com.example.ipstackwebapi.service;
 
-import com.example.ipstackwebapi.contract.IpGeolocationSummaryDto;
+import com.example.ipstackwebapi.IpGeolocationSummaryDto;
 
 import java.util.List;
 
