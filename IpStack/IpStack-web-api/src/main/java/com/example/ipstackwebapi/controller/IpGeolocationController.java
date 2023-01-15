@@ -26,5 +26,5 @@ public class IpGeolocationController {
     public List<IpGeolocation> getAllData(){
         return service.getAll();
     }
-    
+
 }
