@@ -23,8 +23,6 @@ public class IpGeolocation {
     private double longitude;
     @OneToOne
     private Location location;
-    @ManyToOne
-    private Currency currency;
 
     public IpGeolocation() {}
     public IpGeolocation(Long id, String ip, String type, String continentCode, String continentName, String countryCode, String countryName, String regionCode, String regionName, String city, String zip, double latitude, double longitude) {
@@ -153,14 +151,6 @@ public class IpGeolocation {
 
     public void setLocation(Location location) {
         this.location = location;
-    }
-
-    public Currency getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(Currency currency) {
-        this.currency = currency;
     }
 
     @Override

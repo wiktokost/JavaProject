@@ -6,5 +6,4 @@ public interface ICatalogData {
     IpRepository getIpGeolocation();
     LocationRepository getLocation();
     LanguageRepository getLanguage();
-    CurrencyRepository getCurrency();
 }

@@ -1,5 +1,7 @@
 package com.example.ipstackwebapi;
 
+import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.boot.ApplicationArguments;
@@ -13,18 +15,18 @@ import org.springframework.stereotype.Component;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.example.*"})
+@Log4j2
 public class IpStackWebApiApplication implements ApplicationRunner {
-    private static final Logger logger = LogManager.getLogger(IpStackWebApiApplication.class);
     public static void main(String[] args) {
         SpringApplication.run(IpStackWebApiApplication.class, args);
     }
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        logger.trace("Log level: TRACE");
-        logger.info("Log level: INFO");
-        logger.debug("Log level: DEBUG");
-        logger.error("Log level: ERROR");
-        logger.warn("Log level: WARN");
+          log.info("Log level: INFO");
+          log.trace("Log level: TRACE");
+          log.debug("Log level: DEBUG");
+          log.error("Log level: ERROR");
+          log.warn("Log level: WARN");
     }
 }

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class IpStackClientSettings implements IIpStackClientSettings {
     @Value("${API_KEY}")
     private String apiKey;
-    @Value("http://api.ipstack.com/")
+    @Value("api.ipstack.com")
     private String baseUrl;
     @Value("${IP}")
     private String ip;
