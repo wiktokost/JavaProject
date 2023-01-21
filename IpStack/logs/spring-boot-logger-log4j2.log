@@ -1,33 +1,26 @@
-2023-01-20 21:36:56,824 INFO o.s.b.StartupInfoLogger [main] Starting IpStackWebApiApplication using Java 17.0.6 with PID 17392 (C:\Users\Wiktoria\Documents\JAVA\JAZ\JavaProject\IpStack\IpStack-web-api\target\classes started by Wiktoria in C:\Users\Wiktoria\Documents\JAVA\JAZ\JavaProject\IpStack)
-2023-01-20 21:36:56,835 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-20 21:36:57,630 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-01-20 21:36:57,729 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
-2023-01-20 21:36:58,345 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-20 21:36:58,357 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-20 21:36:58,358 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2023-01-20 21:36:58,358 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-01-20 21:36:58,490 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-01-20 21:36:58,491 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1601 ms
-2023-01-20 21:36:58,681 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2023-01-20 21:36:58,953 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:05e89adb-9587-450d-82a3-863b9e91b8e7 user=SA
-2023-01-20 21:36:58,956 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-01-20 21:36:59,012 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-01-20 21:36:59,092 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-01-20 21:36:59,334 WARN o.h.b.i.MetadataBuilderImpl$MetadataBuildingOptionsImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-01-20 21:36:59,556 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-01-20 21:37:00,723 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-01-20 21:37:00,736 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-01-20 21:37:01,111 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-01-20 21:37:01,502 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-20 21:37:01,530 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-20 21:37:01,539 INFO o.s.b.StartupInfoLogger [main] Started IpStackWebApiApplication in 5.19 seconds (process running for 6.473)
-2023-01-20 21:37:01,541 INFO c.e.i.IpStackWebApiApplication [main] Log level: INFO
-2023-01-20 21:37:01,541 ERROR c.e.i.IpStackWebApiApplication [main] Log level: ERROR
-2023-01-20 21:37:01,542 WARN c.e.i.IpStackWebApiApplication [main] Log level: WARN
-2023-01-20 21:37:11,485 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-01-20 21:37:11,485 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2023-01-20 21:37:11,486 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2023-01-20 21:37:44,886 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-01-20 21:37:44,887 INFO o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-01-20 21:37:44,891 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-01-20 21:37:44,893 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-21 18:27:05,083 INFO o.s.b.StartupInfoLogger [main] Starting IpStackWebApiApplication using Java 17.0.6 with PID 15884 (C:\Users\Wiktoria\Documents\JAVA\JAZ\JavaProject\IpStack\IpStack-web-api\target\classes started by Wiktoria in C:\Users\Wiktoria\Documents\JAVA\JAZ\JavaProject\IpStack)
+2023-01-21 18:27:05,099 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-21 18:27:06,121 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-21 18:27:06,214 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2023-01-21 18:27:06,946 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-21 18:27:06,962 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-21 18:27:06,963 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-01-21 18:27:06,964 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-21 18:27:07,111 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-01-21 18:27:07,111 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1954 ms
+2023-01-21 18:27:07,319 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-21 18:27:07,725 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:99e12033-50e9-44eb-957d-22dec8f3465f user=SA
+2023-01-21 18:27:07,729 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-21 18:27:07,814 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-21 18:27:07,941 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-21 18:27:08,221 WARN o.h.b.i.MetadataBuilderImpl$MetadataBuildingOptionsImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-21 18:27:08,486 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-21 18:27:09,793 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-21 18:27:09,807 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-21 18:27:10,262 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-21 18:27:10,799 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-21 18:27:10,829 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-21 18:27:10,848 INFO o.s.b.StartupInfoLogger [main] Started IpStackWebApiApplication in 6.329 seconds (process running for 8.304)
+2023-01-21 18:27:10,850 INFO c.e.i.IpStackWebApiApplication [main] Log level: INFO
+2023-01-21 18:27:10,850 ERROR c.e.i.IpStackWebApiApplication [main] Log level: ERROR
+2023-01-21 18:27:10,850 WARN c.e.i.IpStackWebApiApplication [main] Log level: WARN
