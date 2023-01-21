@@ -2,11 +2,13 @@ package com.example.ipstackwebapi.controller;
 
 import com.example.ipstackdata.model.IpGeolocation;
 import com.example.ipstackwebapi.contract.IpGeolocationDto;
+import com.example.ipstackwebapi.controller.exceptions.IpGeolocationNotFoundException;
 import com.example.ipstackwebapi.service.IpGeolocationService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -19,18 +21,25 @@ public class IpGeolocationController {
     }
 
     @GetMapping("/id/{id}")
-    Optional<IpGeolocation> getIpById(@PathVariable("id") Long id){
-        return service.getId(id);
+    public ResponseEntity<Object> getIpById(@PathVariable("id") Long id){
+        Optional<IpGeolocation> ipGeolocation = service.getId(id);
+        if (ipGeolocation.isPresent()){
+            return new ResponseEntity<>(ipGeolocation.get(), HttpStatus.OK);
+        }
+        else {
+            throw new IpGeolocationNotFoundException("IpGeolocation id not found");
+        }
     }
 
     @GetMapping( "/all")
-    public List<IpGeolocationDto> getAllData(){
-        return service.getAll();
+    public ResponseEntity<Object> getAllData(){
+        return new ResponseEntity<>(service.getAll(), HttpStatus.OK);
     }
 
-    @PostMapping("/")
-    public long saveIpStack(@RequestBody IpGeolocationDto ipStack){
-        return service.addIpStack(ipStack);
+    @PostMapping("/add")
+    public ResponseEntity<Object> saveIpStack(@RequestBody IpGeolocationDto ipStack){
+        var id =service.addIpStack(ipStack);
+        return new ResponseEntity<>(id, HttpStatus.OK);
     }
 
 }
