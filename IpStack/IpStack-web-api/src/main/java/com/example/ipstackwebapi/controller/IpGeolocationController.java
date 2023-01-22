@@ -4,12 +4,10 @@ import com.example.ipstackwebapi.contract.IpGeolocationDto;
 import com.example.ipstackwebapi.service.IpGeolocationService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @Log4j2
@@ -21,6 +19,12 @@ public class IpGeolocationController {
         this.service = service;
     }
 
+    @GetMapping("/Geolocation/{id}")
+    public ResponseEntity<?> getIdGeolocation(@PathVariable("id") Long id){
+
+        return ResponseEntity.ok(id);
+    }
+
     @GetMapping( "/all/Geolocation")
     public ResponseEntity<List<IpGeolocationDto>> getAllDataForGeolocation(){
         log.warn("Exposing all data");
@@ -28,9 +32,10 @@ public class IpGeolocationController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Object> saveIpStack(@RequestBody IpGeolocationDto ipStack){
+    public ResponseEntity<?> saveIpStack(@RequestBody IpGeolocationDto ipStack){
+        log.info("Creating geolocation");
         var id =service.addIpStack(ipStack);
-        return new ResponseEntity<>(id, HttpStatus.OK);
+        return ResponseEntity.ok(id);
     }
 
 }

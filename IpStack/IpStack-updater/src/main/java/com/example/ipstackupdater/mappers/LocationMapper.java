@@ -18,7 +18,7 @@ public class LocationMapper implements IMapEntities<LocationDto, Location>{
         location.setCountryFlagEmoji(locationDto.getCountryFlagEmoji());
         location.setCountryFlagEmojiUnicode(locationDto.getCountryFlagEmojiUnicode());
         location.setCallingCode(locationDto.getCallingCode());
-        location.setEu(locationDto.getIsEu());
+        location.setIsEu(locationDto.getIsEu());
         return location;
     }
 }
