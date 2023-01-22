@@ -8,6 +8,6 @@ import java.util.Optional;
 
 public interface IIpGeolocationService {
     Optional<IpGeolocation> getId(Long id);
-    List<IpGeolocationDto> getAll();
+    List<IpGeolocationDto> getAllGeolocation();
     long addIpStack(IpGeolocationDto dto);
 }

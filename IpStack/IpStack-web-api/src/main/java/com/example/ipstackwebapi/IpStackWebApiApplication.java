@@ -9,18 +9,17 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.example.*"})
-@Log4j2
-public class IpStackWebApiApplication implements ApplicationRunner {
+public class IpStackWebApiApplication /*implements ApplicationRunner*/ {
     public static void main(String[] args) {
         SpringApplication.run(IpStackWebApiApplication.class, args);
     }
 
-    @Override
-    public void run(ApplicationArguments args) throws Exception {
-          log.info("Log level: INFO");
-          log.trace("Log level: TRACE");
-          log.debug("Log level: DEBUG");
-          log.error("Log level: ERROR");
-          log.warn("Log level: WARN");
-    }
+//    @Override
+//    public void run(ApplicationArguments args) throws Exception {
+//          log.info("Log level: INFO");
+//          log.trace("Log level: TRACE");
+//          log.debug("Log level: DEBUG");
+//          log.error("Log level: ERROR");
+//          log.warn("Log level: WARN");
+//    }
 }

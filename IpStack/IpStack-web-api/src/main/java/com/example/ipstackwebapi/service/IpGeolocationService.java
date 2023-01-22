@@ -17,12 +17,12 @@ public class IpGeolocationService implements IIpGeolocationService {
         this.db = db;
     }
 
-        public Optional<IpGeolocation> getId(Long id){
+    public Optional<IpGeolocation> getId(Long id){
         return db.getIpGeolocation().findById(id);
     }
 
     @Override
-    public List<IpGeolocationDto> getAll() {
+    public List<IpGeolocationDto> getAllGeolocation() {
         return db.getIpGeolocation()
                 .findAll()
                 .stream()

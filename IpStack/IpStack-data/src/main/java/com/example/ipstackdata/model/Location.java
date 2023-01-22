@@ -1,11 +1,20 @@
 package com.example.ipstackdata.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,76 +36,16 @@ public class Location {
 
     private Boolean isEu;
 
-
-    public Long getId() {
-        return id;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Location location = (Location) o;
+        return Objects.equals(id, location.id) && Objects.equals(geonameId, location.geonameId) && Objects.equals(capital, location.capital) && Objects.equals(languages, location.languages) && Objects.equals(countryFlag, location.countryFlag) && Objects.equals(countryFlagEmoji, location.countryFlagEmoji) && Objects.equals(countryFlagEmojiUnicode, location.countryFlagEmojiUnicode) && Objects.equals(callingCode, location.callingCode) && Objects.equals(isEu, location.isEu);
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Integer getGeonameId() {
-        return geonameId;
-    }
-
-    public void setGeonameId(Integer geonameId) {
-        this.geonameId = geonameId;
-    }
-
-    public String getCapital() {
-        return capital;
-    }
-
-    public void setCapital(String capital) {
-        this.capital = capital;
-    }
-
-    public String getCountryFlag() {
-        return countryFlag;
-    }
-
-    public void setCountryFlag(String countryFlag) {
-        this.countryFlag = countryFlag;
-    }
-
-    public String getCountryFlagEmoji() {
-        return countryFlagEmoji;
-    }
-
-    public void setCountryFlagEmoji(String countryFlagEmoji) {
-        this.countryFlagEmoji = countryFlagEmoji;
-    }
-
-    public String getCountryFlagEmojiUnicode() {
-        return countryFlagEmojiUnicode;
-    }
-
-    public void setCountryFlagEmojiUnicode(String countryFlagEmojiUnicode) {
-        this.countryFlagEmojiUnicode = countryFlagEmojiUnicode;
-    }
-
-    public String getCallingCode() {
-        return callingCode;
-    }
-
-    public void setCallingCode(String callingCode) {
-        this.callingCode = callingCode;
-    }
-
-    public Boolean getEu() {
-        return isEu;
-    }
-
-    public void setEu(Boolean eu) {
-        isEu = eu;
-    }
-
-    public List<Language> getLanguages() {
-        return languages;
-    }
-
-    public void setLanguages(List<Language> languages) {
-        this.languages = languages;
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, geonameId, capital, languages, countryFlag, countryFlagEmoji, countryFlagEmojiUnicode, callingCode, isEu);
     }
 }
