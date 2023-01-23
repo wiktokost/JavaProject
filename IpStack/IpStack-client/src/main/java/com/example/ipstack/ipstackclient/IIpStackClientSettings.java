@@ -7,10 +7,10 @@ public interface IIpStackClientSettings {
 
     String getBaseUrl();
 
-    String getIp();
+//    String getIp();
 
     default UriComponentsBuilder getUrlBuilder() {
-        return UriComponentsBuilder.newInstance().scheme("http").host(getBaseUrl()).pathSegment(getIp()).queryParam("api_key", getApiKey());
+        return UriComponentsBuilder.newInstance().scheme("http").host(getBaseUrl());//.pathSegment(getIp()).queryParam("api_key", getApiKey())
     }
 }
 

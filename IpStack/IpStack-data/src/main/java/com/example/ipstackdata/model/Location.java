@@ -15,6 +15,7 @@ import java.util.Objects;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "location")
 public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,8 +25,11 @@ public class Location {
 
     private String capital;
     @OneToMany
+    @JoinColumn(name = "languages_id", referencedColumnName = "id")
     private List<Language> languages = new ArrayList<>();
-
+    @OneToOne
+    @JoinColumn(name = "ip_geolocation_id", referencedColumnName = "id")
+    private IpGeolocation ipGeolocation;
     private String countryFlag;
 
     private String countryFlagEmoji;

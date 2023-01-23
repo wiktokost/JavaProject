@@ -11,19 +11,20 @@ public class IpStackClient implements IIpStackClient{
     String baseUrl;
     String apiKey;
     String ip;
-    private IIpStackClientSettings IpStackSettings;
+    private final IIpStackClientSettings IpStackSettings;
 
     public IpStackClient(IIpStackClientSettings settings) {
         restTemplate = new RestTemplate();
         this.baseUrl = settings.getBaseUrl();
         this.apiKey = settings.getApiKey();
-        this.ip = settings.getIp();
+        IpStackSettings = settings;
+//        this.ip = settings.getIp();
     }
 
     @Override
-    public IpGeolocationDto getGeolocationDescription() {
-//        var url = IpStackSettings.getUrlBuilder().queryParam("apiKey", apiKey).build().toUriString();
-//        return restTemplate.getForObject(url, IpGeolocationDto.class);
-    return null;
+    public IpGeolocationDto getGeolocationByIp(String ip) {
+        var url = "http://api.ipstack.com/162.253.68.213?access_key=9ce46658fd7d6b0405e91dccffc9bbdd";
+//        var url = IpStackSettings.getUrlBuilder().pathSegment(ip).queryParam("apiKey", apiKey).build().toUriString();
+        return restTemplate.getForObject(url, IpGeolocationDto.class);
     }
 }

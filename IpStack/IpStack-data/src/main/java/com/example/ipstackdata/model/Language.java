@@ -9,6 +9,7 @@ import java.util.Objects;
 @Entity
 @Setter
 @Getter
+@Table(name = "language")
 public class Language {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,6 +17,9 @@ public class Language {
     private String code;
     private String name;
     private String nativeName;
+    @ManyToOne
+    @JoinColumn(name = "location_id", referencedColumnName = "id")
+    private Location location;
 
     public Language(){}
 

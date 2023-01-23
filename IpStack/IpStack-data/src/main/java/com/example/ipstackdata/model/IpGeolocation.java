@@ -13,6 +13,7 @@ import java.util.Objects;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "ip_geolocation")
 public class IpGeolocation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,6 +31,7 @@ public class IpGeolocation {
     private double latitude;
     private double longitude;
     @OneToOne
+    @JoinColumn(name = "location_id", referencedColumnName = "id")
     private Location location;
 
     @Override

@@ -2,7 +2,9 @@ package com.example.ipstackupdater.mappers;
 
 import com.example.ipstack.ipstackclient.contract.dictionaries.LanguageDto;
 import com.example.ipstackdata.model.Language;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LanguageMapper implements IMapEntities<LanguageDto, Language> {
     @Override
     public Language map(LanguageDto languageDto) {

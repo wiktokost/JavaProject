@@ -2,9 +2,10 @@ package com.example.ipstackupdater.mappers;
 
 import com.example.ipstack.ipstackclient.contract.dictionaries.LocationDto;
 import com.example.ipstackdata.model.Location;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LocationMapper implements IMapEntities<LocationDto, Location>{
-
     @Override
     public Location map(LocationDto locationDto) {
         return map(locationDto, new Location());

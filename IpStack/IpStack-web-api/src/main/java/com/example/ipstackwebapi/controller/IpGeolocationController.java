@@ -25,13 +25,13 @@ public class IpGeolocationController {
         return ResponseEntity.ok(id);
     }
 
-    @GetMapping( "/all/Geolocation")
+    @GetMapping("/all")
     public ResponseEntity<List<IpGeolocationDto>> getAllDataForGeolocation(){
         log.warn("Exposing all data");
         return ResponseEntity.ok(service.getAllGeolocation());
     }
 
-    @PostMapping("/add")
+    @PostMapping
     public ResponseEntity<?> saveIpStack(@RequestBody IpGeolocationDto ipStack){
         log.info("Creating geolocation");
         var id =service.addIpStack(ipStack);

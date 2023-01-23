@@ -2,8 +2,11 @@ package com.example.ipstackupdater.mappers;
 
 import com.example.ipstack.ipstackclient.contract.IpGeolocationDto;
 import com.example.ipstackdata.model.IpGeolocation;
+import org.springframework.stereotype.Component;
 
+@Component
 public class IpGeolocationMapper implements IMapEntities<IpGeolocationDto, IpGeolocation> {
+
     @Override
     public IpGeolocation map(IpGeolocationDto ipGeolocationDto) {
         return map(ipGeolocationDto, new IpGeolocation());
