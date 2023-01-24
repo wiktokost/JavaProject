@@ -10,4 +10,5 @@ public interface IIpGeolocationService {
     Optional<IpGeolocation> getGeolocationById(Long id);
     List<IpGeolocationDto> getGeolocations();
     long addIpStack(IpGeolocationDto dto);
+    void deleteById(Long id);
 }

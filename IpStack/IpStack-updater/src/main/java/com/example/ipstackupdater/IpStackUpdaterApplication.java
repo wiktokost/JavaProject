@@ -21,6 +21,6 @@ public class IpStackUpdaterApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		updater.updateByIp("");
+		updater.updateByIp("185.246.210.179");
 	}
 }

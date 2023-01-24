@@ -1,5 +1,6 @@
 package com.example.ipstackwebapi.contract;
 
+import com.example.ipstackdata.model.Location;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,4 +21,5 @@ public class IpGeolocationDto {
     private String countryName;
     private String regionCode;
     private String regionName;
+//    private Location location;
 }

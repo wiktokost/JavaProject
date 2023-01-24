@@ -35,7 +35,8 @@ public class IpGeolocationService implements IIpGeolocationService {
                         entity.getCountryCode(),
                         entity.getCountryName(),
                         entity.getRegionCode(),
-                        entity.getRegionName()))
+                        entity.getRegionName()
+                        /*entity.getLocation()*/))
                 .toList();
     }
 
@@ -55,7 +56,7 @@ public class IpGeolocationService implements IIpGeolocationService {
         return ipStackEntity.getId();
     }
 
-    public void deletebyId(Long id){
+    public void deleteById(Long id){
        db.getIpGeolocation().deleteById(id);
     }
 

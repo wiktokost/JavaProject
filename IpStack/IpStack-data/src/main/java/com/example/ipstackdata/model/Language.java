@@ -18,7 +18,7 @@ public class Language {
     private String name;
     private String nativeName;
     @ManyToOne
-    @JoinColumn(name = "location_id", referencedColumnName = "id")
+//    @JoinColumn(name = "location_id", referencedColumnName = "id")
     private Location location;
 
     public Language(){}

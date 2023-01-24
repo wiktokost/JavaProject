@@ -30,8 +30,8 @@ public class IpGeolocation {
     private String zip;
     private double latitude;
     private double longitude;
-    @OneToOne
-    @JoinColumn(name = "location_id", referencedColumnName = "id")
+    @OneToOne(mappedBy = "ipGeolocation")
+//    @JoinColumn(name = "location_id", referencedColumnName = "id")
     private Location location;
 
     @Override

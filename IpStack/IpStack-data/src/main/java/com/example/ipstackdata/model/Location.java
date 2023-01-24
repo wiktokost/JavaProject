@@ -24,11 +24,10 @@ public class Location {
     private Integer geonameId;
 
     private String capital;
-    @OneToMany
-    @JoinColumn(name = "languages_id", referencedColumnName = "id")
+    @OneToMany(mappedBy = "location")
+//    @JoinColumn(name = "languages_id", referencedColumnName = "id")
     private List<Language> languages = new ArrayList<>();
     @OneToOne
-    @JoinColumn(name = "ip_geolocation_id", referencedColumnName = "id")
     private IpGeolocation ipGeolocation;
     private String countryFlag;
 

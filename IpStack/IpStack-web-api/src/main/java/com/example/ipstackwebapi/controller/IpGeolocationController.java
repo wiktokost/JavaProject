@@ -41,6 +41,6 @@ public class IpGeolocationController {
 
     @DeleteMapping("/Geolocation/delete/{id}")
     public void deleteGeolocationById(@PathVariable("id") Long id){
-        service.deletebyId(id);
+        service.deleteById(id);
     }
 }
