@@ -5,12 +5,14 @@ import com.example.ipstackwebapi.service.IpGeolocationService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@Controller
 @Log4j2
+@RequestMapping("/ipStack")
 public class IpGeolocationController {
     private final IpGeolocationService service;
 
@@ -25,7 +27,7 @@ public class IpGeolocationController {
         return ResponseEntity.ok(id);
     }
 
-    @GetMapping("/all")
+    @GetMapping("/Geolocation/all")
     public ResponseEntity<List<IpGeolocationDto>> getAllDataForGeolocation(){
         log.warn("Exposing all data");
         return ResponseEntity.ok(service.getAllGeolocation());

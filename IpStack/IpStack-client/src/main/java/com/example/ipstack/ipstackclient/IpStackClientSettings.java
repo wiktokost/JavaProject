@@ -9,8 +9,6 @@ public class IpStackClientSettings implements IIpStackClientSettings {
     private String apiKey;
     @Value("api.ipstack.com")
     private String baseUrl;
-//    @Value("${IP}")
-//    private String ip;
 
     @Override
     public String getApiKey() {
@@ -22,8 +20,4 @@ public class IpStackClientSettings implements IIpStackClientSettings {
         return baseUrl;
     }
 
-//    @Override
-//    public String getIp() {
-//        return ip;
-//    }
 }
