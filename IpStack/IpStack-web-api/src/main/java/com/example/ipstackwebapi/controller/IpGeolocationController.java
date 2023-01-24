@@ -23,14 +23,13 @@ public class IpGeolocationController {
 
     @GetMapping("/Geolocation/{id}")
     public ResponseEntity<?> getIdGeolocation(@PathVariable("id") Long id){
-
-        return ResponseEntity.ok(id);
+        return ResponseEntity.ok(service.getGeolocationById(id));
     }
 
     @GetMapping("/Geolocation/all")
     public ResponseEntity<List<IpGeolocationDto>> getAllDataForGeolocation(){
         log.warn("Exposing all data");
-        return ResponseEntity.ok(service.getAllGeolocation());
+        return ResponseEntity.ok(service.getGeolocations());
     }
 
     @PostMapping
@@ -40,4 +39,8 @@ public class IpGeolocationController {
         return ResponseEntity.ok(id);
     }
 
+    @DeleteMapping("/Geolocation/delete/{id}")
+    public void deleteGeolocationById(@PathVariable("id") Long id){
+        service.deletebyId(id);
+    }
 }

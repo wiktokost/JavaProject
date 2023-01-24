@@ -17,12 +17,12 @@ public class IpGeolocationService implements IIpGeolocationService {
         this.db = db;
     }
 
-    public Optional<IpGeolocation> getId(Long id){
+    public Optional<IpGeolocation> getGeolocationById(Long id){
         return db.getIpGeolocation().findById(id);
     }
 
     @Override
-    public List<IpGeolocationDto> getAllGeolocation() {
+    public List<IpGeolocationDto> getGeolocations() {
         return db.getIpGeolocation()
                 .findAll()
                 .stream()
@@ -53,6 +53,10 @@ public class IpGeolocationService implements IIpGeolocationService {
         ipStackEntity.setRegionName(dto.getRegionName());
         db.getIpGeolocation().save(ipStackEntity);
         return ipStackEntity.getId();
+    }
+
+    public void deletebyId(Long id){
+       db.getIpGeolocation().deleteById(id);
     }
 
 }

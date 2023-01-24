@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IIpGeolocationService {
-    Optional<IpGeolocation> getId(Long id);
-    List<IpGeolocationDto> getAllGeolocation();
+    Optional<IpGeolocation> getGeolocationById(Long id);
+    List<IpGeolocationDto> getGeolocations();
     long addIpStack(IpGeolocationDto dto);
 }

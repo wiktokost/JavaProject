@@ -1,6 +1,5 @@
 package com.example.ipstack.ipstackclient;
 
-import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
 public interface IIpStackClientSettings {
