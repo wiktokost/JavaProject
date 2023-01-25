@@ -21,5 +21,5 @@ public class IpGeolocationDto {
     private String countryName;
     private String regionCode;
     private String regionName;
-//    private Location location;
+    private LocationDto location;
 }
