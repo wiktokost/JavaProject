@@ -2,7 +2,6 @@ package com.example.ipstackupdater.updater;
 
 import com.example.ipstack.ipstackclient.IIpStackClient;
 import com.example.ipstackdata.repositories.ICatalogData;
-import com.example.ipstackdata.repositories.LanguageRepository;
 import com.example.ipstackupdater.mappers.ICatalogMappers;
 import org.springframework.stereotype.Component;
 
@@ -11,14 +10,11 @@ public class GeolocationUpdater implements IUpdateGeolocation{
     private final ICatalogData catalogData;
     private final IIpStackClient ipStackClient;
     private final ICatalogMappers catalogMappers;
-    private final LanguageRepository languageRepository;
 
-    public GeolocationUpdater(ICatalogData catalogData, IIpStackClient ipStackClient, ICatalogMappers catalogMappers,
-                              LanguageRepository languageRepository) {
+    public GeolocationUpdater(ICatalogData catalogData, IIpStackClient ipStackClient, ICatalogMappers catalogMappers) {
         this.catalogData = catalogData;
         this.ipStackClient = ipStackClient;
         this.catalogMappers = catalogMappers;
-        this.languageRepository = languageRepository;
     }
 
     @Override

@@ -6,8 +6,6 @@ import com.example.ipstack.ipstackclient.contract.dictionaries.LocationDto;
 import com.example.ipstackdata.model.IpGeolocation;
 import com.example.ipstackdata.model.Language;
 import com.example.ipstackdata.model.Location;
-import lombok.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
