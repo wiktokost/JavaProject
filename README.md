@@ -1,1 +1,1 @@
-Aplikacja typu CRUD(CREATE READ UPDATE DELETE) w SpringBoot.
+Aplikacja typu CRUD w SpringBoot.
