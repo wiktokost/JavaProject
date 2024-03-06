@@ -8,10 +8,10 @@ Projekt IpStackUpdater jest aplikacją służącą do aktualizacji danych geolok
 
 Projekt składa się z kilku modułów i klas Java, które obsługują różne funkcjonalności aplikacji. Oto krótka lista najważniejszych elementów:
 
-* ipstackclient: Moduł zawierający klienta do komunikacji z API IpStack.
-* ipstackdata: Moduł zawierający modele danych oraz repozytoria do obsługi bazy danych.
-* ipstackupdater: Moduł zawierający usługi do aktualizacji danych geolokalizacyjnych.
-* ipstackwebapi: Moduł zawierający interfejs API webowego oraz kontrolery do obsługi żądań HTTP.
+* ipstack-client: Moduł zawierający klienta do komunikacji z API IpStack.
+* ipstack-data: Moduł zawierający modele danych oraz repozytoria do obsługi bazy danych.
+* ipstack-updater: Moduł zawierający usługi do aktualizacji danych geolokalizacyjnych.
+* ipstack-web-api: Moduł zawierający interfejs API webowego oraz kontrolery do obsługi żądań HTTP.
 * resources: Zawiera pliki konfiguracyjne, takie jak plik properties z kluczami API, plik konfiguracyjny dla log4j2 oraz plik application.properties dla Spring Boot.
 
 ## Opis klas
