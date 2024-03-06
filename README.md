@@ -2,7 +2,7 @@
 
 ## Opis projektu
 
-Projekt IpStackUpdater jest aplikacją służącą do aktualizacji danych geolokalizacyjnych na podstawie adresu IP za pomocą API IpStack. Aplikacja pobiera dane z serwisu IpStack, a następnie aktualizuje lokalną bazę danych z informacjami geograficznymi.
+Projekt IpStackUpdater jest aplikacją służącą do aktualizacji danych geolokalizacyjnych na podstawie adresu IP za pomocą API IpStack. Aplikacja pobiera dane z serwisu IpStack: https://ipstack.com/ , a następnie aktualizuje lokalną bazę danych z informacjami geograficznymi.
 
 ## Struktura projektu
 
